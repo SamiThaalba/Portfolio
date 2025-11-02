@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF2E0;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(192, 201, 238, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 4rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #898AC4;
+}
+
+
+.Home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #FFF2E0 0%, #C0C9EE 100%);
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #222;
+}
+
+.hero-content span {
+    color: #898AC4;
+}
+
+.hero-content p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.cta-btn {
+    background: #898AC4;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #6e70b3;
+}
+
+
+.About {
+    background: #C0C9EE;
+    width: 75%;
+    max-height: 100vh;
+    min-height: 35vh;
+    margin: 6rem auto;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+.About:hover {
+    transform: translateY(-10px);
+}
+
+.About h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.About p {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+.Skills {
+    min-height: 70vh;
+    padding: 5rem 2rem;
+    background: #FFF2E0;
+    text-align: center;
+    align-items: center;
+}
+
+.Skills h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-card {
+    background: rgba(192, 201, 238, 0.8);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+    font-size: 2rem;
+    color: #898AC4;
+    margin-bottom: 1rem;
+}
+
+
+.Projects {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #FFF2E0;
+}
+
+.Projects h2 {
+    margin-bottom: 3rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(192, 201, 238, 0.8);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-btn {
+    background: #898AC4;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    align-self: center;
+    transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #6e70b3;
+}
+
+
+.footer {
+    background: #C0C9EE;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    background: #898AC4;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(137, 138, 196, 0.7);
+}
+
+.icon.instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.icon.linkedin:hover {
+    background: #0077b5;
+}
+
+.icon.github:hover {
+    background: #333;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #222;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
